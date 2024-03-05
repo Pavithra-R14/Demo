@@ -1,0 +1,145 @@
+:root{
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --slateblue : hsl(252, 100%, 67%);
+    --royalblue : hsl(241, 81%, 54%);
+    --Violetblue : hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-style: normal;
+    color: var(--White);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container.bg{
+    background: linear-gradient(var(--slateblue),var(--royalblue));
+    border-radius: 10px;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(var(--Violetblue),var(--Persianblue));
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.p-5{
+    padding: 1rem;
+}
+.mainscore{
+    font-size: 42px;
+    font-weight: 800;
+}
+.total{
+    font-size: 12px;
+    font-weight: 200;
+}
+.status{
+    font-size: 18px;
+    font-weight: 700;
+}
+.para{
+    padding: 0.5rem;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 200;
+}
+.container.content{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #0000003b;
+}
+.summary{
+    color: var(--Darkgrayblue);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    font-weight: 700;
+}
+.d-flex{
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0.5rem;
+}
+.d-flex.reaction{
+    background-color: hsla(0,76%,94%,1);
+} 
+.reactionText{
+    color: var(--Lightred);
+}
+.d-flex.memory{
+    background-color: hsl(39deg 100% 93.63%);
+}
+.MemoryText{
+    color: var(--Orangeyyellow);
+}
+.d-flex.verbal{
+    background-color: hsla(166,80%,90%,1);
+}
+.verbalText{
+    color: var(--Greenteal);
+}
+.d-flex.visual{
+    background-color:hsl(241deg 90.59% 94.42%);
+}
+.visualText{
+    color: var(--Cobaltblue);
+}
+.score{
+    color: var(--Darkgrayblue);
+    font-size: 15px;
+}
+.totalScore{
+    color:#a09a9a
+}
+.imgWrap{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.btnStyle{
+    padding: 1rem 0 1.5rem 0;
+}
+.btn{
+    padding: 0.3rem 3rem;
+    background-color: #303b59;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 32px;
+}
+@media (max-width:955px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }    
+}
